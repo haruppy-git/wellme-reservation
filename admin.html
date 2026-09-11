@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>wellme ｜ 顧客管理</title>
+<link rel="stylesheet" href="style.css?v=11">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#/customers">
+      <span class="brand__name">wellme</span>
+      <span class="brand__sub">顧客管理</span>
+    </a>
+    <nav class="gnav">
+      <ul>
+        <li><a href="#/customers">顧客</a></li>
+        <li><a href="#/reservations">予約</a></li>
+        <li><a href="#/settings">設定</a></li>
+        <li><a href="index.html">予約サイト →</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="layout layout--wide">
+  <main id="view" class="view"></main>
+</div>
+
+<footer class="site-footer">
+  <p>&copy; wellme ｜ Google スプレッドシートをデータベースにした顧客管理（デモ）</p>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel" role="dialog" aria-modal="true">
+    <button class="modal__close" data-close aria-label="閉じる">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="sheet.js?v=11"></script>
+<script src="admin.js?v=11"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>秋田市美容室　wellme ｜ ご予約</title>
+<link rel="stylesheet" href="style.css?v=11">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#/">
+      <span class="brand__name">wellme</span>
+      <span class="brand__sub">秋田市美容室</span>
+    </a>
+    <nav class="gnav">
+      <ul>
+        <li><a href="#/">メニュー</a></li>
+        <li><a href="#/lookup">予約の確認・キャンセル</a></li>
+        <li><a href="#/account" id="nav-account">ログイン</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="shopinfo">
+    <div class="shopinfo__block">
+      <h2 class="shopinfo__title">所在地</h2>
+      <p>秋田県秋田市大町３－１－８</p>
+    </div>
+    <div class="shopinfo__block">
+      <h2 class="shopinfo__title">営業時間</h2>
+      <table class="hours" id="hours-table"></table>
+    </div>
+    <div class="shopinfo__block">
+      <h2 class="shopinfo__title">予約に関する注意事項</h2>
+      <dl class="rules" id="rules-list"></dl>
+    </div>
+    <ul class="shopinfo__links">
+      <li><a href="#/about">About Us</a></li>
+      <li><a href="#/lookup">予約の確認・キャンセル</a></li>
+    </ul>
+  </aside>
+
+  <main id="view" class="view"></main>
+</div>
+
+<footer class="site-footer">
+  <p>&copy; wellme ｜ このサイトは予約システムの仕組みを再現した学習用デモです
+    <a class="staff-link" href="admin.html">スタッフ用：顧客管理</a></p>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel" role="dialog" aria-modal="true">
+    <button class="modal__close" data-close aria-label="閉じる">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="sheet.js?v=11"></script>
+<script src="data.js?v=11"></script>
+<script src="app.js?v=11"></script>
+</body>
+</html>
